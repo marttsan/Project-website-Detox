@@ -54,9 +54,23 @@ img {
   color: var(--primary-color);
 }
 
-/* .navbar ul li:last-child a {
-  margin-left: 10px;
-} */
+/* Hero section */
+
+.hero-image-girl {
+  width: 100%;
+  height: 550px;
+
+  background: url(/images/blured-bag-left-hero.png) left bottom no-repeat,
+    url(/images/scroll-down-bag.png) center bottom no-repeat,
+    url(/images/blured-bag-right-hero.png) right bottom no-repeat,
+    url(/images/girl-hero-section.png) 25% bottom no-repeat;
+}
+
+.hero-main-text {
+  position: absolute;
+  width: 70%;
+  margin: 200px auto;
+}
 
 /* BTN classes */
 
@@ -72,4 +86,10 @@ img {
   cursor: pointer;
   text-align: center;
   transition: 0.5;
+}
+.chevrons {
+  display: flex;
+  flex-direction: column;
+}
+.chevron1 {
 }
