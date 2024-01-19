@@ -32,7 +32,7 @@ img {
   background-color: #fff;
   padding: 20px;
 
-  /* border-radius: 0px 0px 5px 5px;*/
+  border-radius: 0px 0px 5px 5px;
 }
 
 .navbar .container {
@@ -56,24 +56,50 @@ img {
 
 /* Hero section */
 
-.hero-image-girl {
+.hero {
+  height: 660px;
+  border-bottom: 1px dotted black;
+}
+
+.container-hero {
+  position: absolute;
   width: 100%;
   height: 550px;
+  border-bottom: 1px dotted black;
 
-  background: url(/images/blured-bag-left-hero.png) left bottom no-repeat,
+  background: url(/images/blurred-bag-left-hero.png) left bottom no-repeat,
     url(/images/scroll-down-bag.png) center bottom no-repeat,
-    url(/images/blured-bag-right-hero.png) right bottom no-repeat,
+    url(/images/blurred-bag-right-hero.png) right bottom no-repeat,
     url(/images/girl-hero-section.png) 25% bottom no-repeat;
 }
 
-.hero-main-text {
+.hero .logo img {
+  width: 300px;
+  height: 200px;
+}
+.hero-heading .logo {
   position: absolute;
-  width: 70%;
-  margin: 200px auto;
+  left: 50%;
+  top: 150px;
+}
+.text {
+  position: absolute;
+  font-size: 2.5rem;
+  width: 500px;
+  height: 100px;
+  top: 55%;
+  left: 50%;
+}
+.text .heading-text {
+  font-weight: 400;
+}
+
+.text .secondary-text {
+  padding-bottom: 20px;
+  line-height: 40px;
 }
 
 /* BTN classes */
-
 .btn {
   display: inline-block;
   padding: 5px 30px;
@@ -86,10 +112,4 @@ img {
   cursor: pointer;
   text-align: center;
   transition: 0.5;
-}
-.chevrons {
-  display: flex;
-  flex-direction: column;
-}
-.chevron1 {
 }
