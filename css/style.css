@@ -99,6 +99,31 @@ img {
   line-height: 40px;
 }
 
+/* About Product section  */
+.product-info {
+  height: 730px;
+  border-bottom: 1px dotted black;
+}
+.image-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50%;
+}
+.image-circle img {
+  position: absolute;
+  height: 570px;
+  width: auto;
+}
+.circle {
+  background: #fef9f1;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
 /* BTN classes */
 .btn {
   display: inline-block;
