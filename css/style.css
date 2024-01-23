@@ -14,8 +14,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
-  /* to check what is this  */
-  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -38,7 +36,8 @@ img {
 .navbar .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+
   margin: 0 100px;
 }
 .navbar .main-menu ul {
@@ -58,14 +57,12 @@ img {
 
 .hero {
   height: 660px;
-  border-bottom: 1px dotted black;
 }
 
 .container-hero {
   position: absolute;
   width: 100%;
   height: 550px;
-  border-bottom: 1px dotted black;
 
   background: url(/images/blurred-bag-left-hero.png) left bottom no-repeat,
     url(/images/scroll-down-bag.png) center bottom no-repeat,
@@ -82,11 +79,14 @@ img {
   left: 50%;
   top: 150px;
 }
+.hero-heading {
+  display: flex;
+  flex-flow: column;
+}
 .text {
   position: absolute;
   font-size: 2.5rem;
-  width: 500px;
-  height: 100px;
+
   top: 55%;
   left: 50%;
 }
@@ -138,7 +138,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px dotted black;
 }
 
 /* .icon {
@@ -157,8 +156,7 @@ img {
   padding: 30px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-
-  right: 20%;
+  right: 30%;
 }
 .tab_box {
   width: 100%;
@@ -178,11 +176,7 @@ img {
   cursor: pointer;
 }
 
-/* .tab-title-icons {
-  display: flex;
-/* } */
 
-/*  */
 .content_box {
   padding: 20px;
 }
@@ -218,7 +212,7 @@ img {
 }
 .line {
   position: absolute;
-  top: 1048px;
+  top: 1012px;
   left: 48px;
   width: 90px;
   height: 5px;
@@ -232,7 +226,270 @@ img {
 
   align-content: space-between;
 }
+/* section 4  */
 
+.card {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 50px auto;
+}
+
+.card:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 3px var(--primary-color);
+}
+.card img {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container p {
+  font-size: 0.8rem;
+  text-wrap: wrap;
+  text-align: center;
+}
+.container p span {
+  font-weight: 700;
+}
+.card-last img {
+  margin-bottom: 5px;
+}
+.card2 p {
+  padding-bottom: 10px;
+}
+.card-last p {
+  padding-bottom: 12px;
+}
+.reason-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.reason-heading {
+  text-align: center;
+}
+.reason-heading h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.reason-heading span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* section BMI */
+
+.bmi-heading-text {
+  display: flex;
+  flex-flow: column;
+  border-radius: 10px;
+  margin-left: 7rem;
+  width: 90%;
+  height: 300px;
+  background-color: #fff9f0;
+}
+.title-bmi,
+.text-bmi,
+.btn-primary {
+  margin-left: 5rem;
+}
+.title-bmi {
+  margin-top: 8%;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.title-bmi span {
+  font-weight: 700;
+}
+/* .text-bmi {
+  margin-bottom: 20px;
+  margin-right: 20px;
+} */
+.bmi-heading-text {
+  position: relative;
+
+  z-index: 1;
+}
+/* .image {
+  position: relative;
+  left: 50%;
+  z-index: 5;
+} */
+.container-bmi .bmi-heading-text .text-bmi {
+  font-size: 1.1rem;
+  text-align: left;
+}
+.container-bmi {
+  display: flex;
+}
+
+.button-bmi a {
+  display: relative;
+  padding: 5px 30px;
+  margin-left: 5rem;
+
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5;
+  margin-top: 20px;
+}
+
+/* End of section BMI   */
+
+/* section 6 */
+
+.try-detox {
+  height: 470px;
+  background-color: antiquewhite;
+}
+.container-try-detox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.image-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-inner {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.image {
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 70px 50px 70px 450px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.bag {
+  position: relative;
+  right: 10rem;
+}
+.img2,
+.img3 {
+  padding-left: 15px;
+}
+.pack {
+  font-weight: 700;
+}
+.logo-price .pack {
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 2rem;
+}
+.logo-price .old-price {
+  text-decoration: line-through;
+  color: #b08f6d;
+}
+.text-btn {
+  margin: auto 100px;
+}
+.text-btn h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.text-btn h3 span {
+  font-weight: 700;
+}
+
+.text-btn {
+  font-weight: 300;
+}
+/* FOOTER */
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.center-column {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.menu ul {
+  padding: 0 10rem;
+}
+.menu ul li {
+  text-decoration: none;
+}
+.payment-icons {
+  padding: 0 22rem;
+}
+
+.delivery-icons {
+  padding: 0 32rem;
+}
+.social-icons {
+  padding: 0 36rem;
+}
+
+.copyright {
+  justify-content: center;
+}
+.results {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.font-sm {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.font-color-grey {
+  color: rgb(203, 212, 212);
+}
+/* end of footer */
 /* BTN classes */
 .btn {
   display: inline-block;
@@ -246,4 +503,178 @@ img {
   cursor: pointer;
   text-align: center;
   transition: 0.5;
+}
+
+/* HAMBURGER */
+
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+.mobile-menu {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+@media (max-width: 960px) {
+  .navbar .container {
+    margin: 0 auto;
+  }
+  .payment-icons {
+    padding: 0 6rem;
+  }
+  .delivery-icons {
+    padding: 0 15rem;
+  }
+  .product-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .tab-title-icons {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 1rem;
+  }
+
+  .line {
+    position: absolute;
+    top: 1558px;
+    left: 48px;
+    width: 90px;
+    height: 5px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  .reason-info {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .navbar .main-menu {
+    display: none;
+  }
+  .navbar .hamburger-button {
+    display: block;
+  }
+
+  .container-hero {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+
+    background: url(/images/scroll-down-bag.png) center bottom no-repeat,
+      url(/images/girl-hero-section.png) 10% bottom no-repeat;
+  }
+  .hero .logo img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .text {
+    position: relative;
+    font-size: 1rem;
+  }
+  .text .heading-text {
+    font-weight: 400;
+  }
+
+  .text .secondary-text {
+    padding-bottom: 50px;
+    line-height: 40px;
+  }
+  .card-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .payment-icons {
+    padding: 0 1rem;
+  }
+  .delivery-icons {
+    padding: 0 7rem;
+  }
+  .menu ul {
+    padding: 0 1rem;
+  }
+  .btn {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-hero {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+
+    background: url(/images/girl-hero-section.png) 0% left no-repeat;
+  }
+  .text {
+    
+    font-size: 1rem;
+    margin-top: 300px;
+    margin-left: 50px;
+  }
+  .hero .logo img {
+    width: 200px;
+    height: 100px;
+    margin-left: 40px;
+  }
+  .tab-title-icons {
+    flex-wrap: wrap;
+    gap: 1px;
+    padding: 5px 5px;
+  }
+  .payment-icons {
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+  .menu ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+  
 }
